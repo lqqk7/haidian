@@ -1,0 +1,42 @@
+# Default to keeping historical artifacts local; retain sources and inputs below.
+*
+!*/
+!*.py
+!*.js
+!*.sh
+!*.json
+!*.geojson
+!*.pkl
+!.gitignore
+!README.md
+!requirements.txt
+!/wpn2b
+# These HTML files are source templates or inputs to later production rounds.
+!/*.html
+!/w100-plates/*.html
+!/w90-bgh/*.html
+!/w87-section/green-section-principle.html
+!/w87-tactile/tactile-corridor-map.html
+!/w86/*.old.html
+!/wp4b/out/*.html
+!/wp4b/out/a0/*.html
+!/wp4b/out/a3/*.html
+!/wpr6/mbg/*.html
+!/wpr6/wpe2/fig-*.html
+!/wpr6/wpe2/fonts/*.ttf
+!/wpr6/wpe2/fonts/*.otf
+# Dependencies, backup copies, generated reports, and screenshots remain local.
+venv/
+node_modules/
+__pycache__/
+bak/
+bak-v80/
+backup/
+orig-src/
+shots/
+qa/
+report/
+qtest/
+wp4b/out/*.json
+wp4b/out/a0/*.json
+wp4b/out/a3/*.json

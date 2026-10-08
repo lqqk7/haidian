@@ -1,0 +1,47 @@
+<meta charset="utf-8">
+<title>enterprise-journey.en — card band</title>
+<style>
+  @font-face{font-family:'SHS';src:local('Source Han Sans SC Regular'),url('file:///Users/tutu/Library/Fonts/SourceHanSansSC-Regular.otf');font-weight:400}
+  @font-face{font-family:'SHS';src:local('Source Han Sans SC Medium'),url('file:///Users/tutu/Library/Fonts/SourceHanSansSC-Medium.otf');font-weight:500}
+  @font-face{font-family:'SHS';src:local('Source Han Sans SC Bold'),url('file:///Users/tutu/Library/Fonts/SourceHanSansSC-Bold.otf');font-weight:700}
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:2400px;height:310px;background:#F2EFE7;
+    font-family:'SHS','Source Han Sans SC',sans-serif;-webkit-font-smoothing:antialiased}
+  .row{position:absolute;left:38px;top:8px;width:2324px;height:222px;
+       display:flex;align-items:stretch}
+  .card{width:333px;border-radius:14px;padding:20px 20px 18px;
+        display:flex;flex-direction:column;color:#fff;flex:0 0 333px}
+  .arrow{flex:1 1 auto;display:flex;align-items:center;justify-content:center;
+         color:#3B4A4A;font-size:24px;line-height:1}
+  .hd{display:flex;align-items:flex-start;gap:10px;margin-bottom:9px}
+  .ttl{font-weight:700;font-size:22px;line-height:1.24;flex:1 1 auto}
+  .bdg{flex:0 0 auto;white-space:nowrap;font-size:17px;line-height:1.24;
+       font-weight:500;opacity:.62;padding-top:2px}
+  .bd{font-size:17px;line-height:1.44;opacity:.95}
+</style>
+<div class="row" id="row"></div>
+<script>
+const CARDS=[
+ {c:'#5D87B0',b:'',   t:'Enter',
+  d:'Register a problem in the open library; the Zhongguancun wing connects professional services'},
+ {c:'#10383D',b:'L0', t:'Data and permission',
+  d:'Operator, ethics, data boundary and responsibility confirmed'},
+ {c:'#177C78',b:'L1', t:'Reversible prototype',
+  d:'Temporary assembly with removal drill, no space rebuilt'},
+ {c:'#177C78',b:'L2', t:'Closed paired testing',
+  d:'Zhongzhiyuan controlled court, AI on/off recorded in pairs'},
+ {c:'#6B5B95',b:'L3', t:'Limited opening',
+  d:'Voluntary co-design review at the Origin Community, exit always open'},
+ {c:'#D76450',b:'L4a/b',t:'Adoption and normal operation',
+  d:'Dazhongsi adoption receipt, cash and staffed fallbacks kept; the v0.4 split: L4a readiness · L4b time-bounded operation'}
+];
+const row=document.getElementById('row');
+CARDS.forEach((k,i)=>{
+  if(i){const a=document.createElement('div');a.className='arrow';a.textContent='→';row.appendChild(a);}
+  const el=document.createElement('div');el.className='card';el.style.background=k.c;
+  el.innerHTML='<div class="hd"><div class="ttl">'+k.t+'</div>'+
+      (k.b?'<div class="bdg">'+k.b+'</div>':'')+'</div>'+
+      '<div class="bd">'+k.d+'</div>';
+  row.appendChild(el);
+});
+</script>

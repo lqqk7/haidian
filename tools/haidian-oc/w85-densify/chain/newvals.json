@@ -1,0 +1,136 @@
+{
+ "road_lengths_m": {
+  "ROAD-001": 9425.676,
+  "ROAD-002": 1294.222,
+  "ROAD-003": 1250.497,
+  "ROAD-004": 1431.082,
+  "ROAD-005": 9457.135
+ },
+ "ai_off_declared_network_length_m": 18882.811,
+ "ai_off_network_component_count": 2,
+ "alt": {
+  "ALT-A": 333.15,
+  "ALT-B": 400.023,
+  "ratio": 1.201
+ },
+ "rows": [
+  {
+   "state_id": "BASE_ON",
+   "task_id": "T1",
+   "origin_attached_to": "ROAD-004",
+   "origin_access_stub_m": 30.984,
+   "destination_attached_to": "ROAD-004",
+   "destination_access_stub_m": 69.038,
+   "network_m": 206.188,
+   "total_m": 306.21,
+   "reachable": true
+  },
+  {
+   "state_id": "BASE_ON",
+   "task_id": "T2",
+   "origin_attached_to": "ROAD-004",
+   "origin_access_stub_m": 30.984,
+   "destination_attached_to": "ROAD-004",
+   "destination_access_stub_m": 237.868,
+   "network_m": 102.342,
+   "total_m": 371.193,
+   "reachable": true
+  },
+  {
+   "state_id": "BASE_OFF",
+   "task_id": "T1",
+   "origin_attached_to": null,
+   "origin_access_stub_m": null,
+   "destination_attached_to": null,
+   "destination_access_stub_m": null,
+   "network_m": null,
+   "total_m": null,
+   "reachable": false
+  },
+  {
+   "state_id": "BASE_OFF",
+   "task_id": "T2",
+   "origin_attached_to": null,
+   "origin_access_stub_m": null,
+   "destination_attached_to": null,
+   "destination_access_stub_m": null,
+   "network_m": null,
+   "total_m": null,
+   "reachable": false
+  },
+  {
+   "state_id": "ALT_A_OFF",
+   "task_id": "T1",
+   "origin_attached_to": "ALT-A-UPGRADE",
+   "origin_access_stub_m": 30.984,
+   "destination_attached_to": "ALT-A-UPGRADE",
+   "destination_access_stub_m": 69.038,
+   "network_m": 206.188,
+   "total_m": 306.21,
+   "reachable": true
+  },
+  {
+   "state_id": "ALT_A_OFF",
+   "task_id": "T2",
+   "origin_attached_to": "ALT-A-UPGRADE",
+   "origin_access_stub_m": 30.984,
+   "destination_attached_to": "ALT-A-UPGRADE",
+   "destination_access_stub_m": 237.868,
+   "network_m": 102.342,
+   "total_m": 371.193,
+   "reachable": true
+  },
+  {
+   "state_id": "ALT_B_OFF",
+   "task_id": "T1",
+   "origin_attached_to": "ALT-B-LINK",
+   "origin_access_stub_m": 186.687,
+   "destination_attached_to": "ALT-B-LINK",
+   "destination_access_stub_m": 243.585,
+   "network_m": 187.557,
+   "total_m": 617.829,
+   "reachable": true
+  },
+  {
+   "state_id": "ALT_B_OFF",
+   "task_id": "T2",
+   "origin_attached_to": "ALT-B-LINK",
+   "origin_access_stub_m": 186.687,
+   "destination_attached_to": "ALT-B-LINK",
+   "destination_access_stub_m": 0,
+   "network_m": 283.34,
+   "total_m": 470.027,
+   "reachable": true
+  }
+ ],
+ "derived": {
+  "alt_a_trip_ratio_over_ai_on": {
+   "T1": 1,
+   "T2": 1
+  },
+  "alt_b_trip_ratio_over_ai_on": {
+   "T1": 2.018,
+   "T2": 1.266
+  },
+  "alt_b_trip_delta_m": {
+   "T1": 311.619,
+   "T2": 98.834
+  },
+  "alt_b_approach_ratio_over_ai_on": {
+   "OP-08": 3.528,
+   "OP-09": 0
+  }
+ },
+ "anchors": {
+  "OP-01": "ROAD-001",
+  "OP-02": "ROAD-001",
+  "OP-03": "ROAD-005",
+  "OP-04": "ROAD-004",
+  "OP-05": "ROAD-005",
+  "OP-06": "ROAD-005",
+  "OP-07": "ROAD-005",
+  "OP-08": "ROAD-004",
+  "OP-09": "ROAD-004",
+  "OP-10": "ROAD-001"
+ }
+}
